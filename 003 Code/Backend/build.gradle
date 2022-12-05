@@ -1,0 +1,63 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.6'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+jar {
+	enabled = false
+}
+
+group = 'com.capstone'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+	all {
+		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'mysql:mysql-connector-java'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'io.rest-assured:rest-assured:3.3.0'
+	testImplementation 'org.mockito:mockito-core:3.12.4'
+
+	implementation 'com.google.guava:guava:29.0-jre'
+	implementation 'org.hyperledger.fabric:fabric-gateway-java:2.1.1'
+	implementation 'io.netty:netty-tcnative-boringssl-static:2.0.36.Final'
+	implementation 'io.netty:netty-all:4.1.50.Final'
+
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+
+	implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
+
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+
+	testImplementation 'com.h2database:h2:1.4.200'
+
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+	implementation 'org.mindrot:jbcrypt:0.4'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

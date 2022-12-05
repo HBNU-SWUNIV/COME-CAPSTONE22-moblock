@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.hyperledgervirtualmoneyproject.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_transfer"
+        android:name="com.example.hyperledgervirtualmoneyproject.ui.transfer.TransferFragment"
+        android:label="@string/title_transfer"
+        tools:layout="@layout/fragment_transfer" />
+
+    <fragment
+        android:id="@+id/navigation_shopList"
+        android:name="com.example.hyperledgervirtualmoneyproject.ui.shopList.ShopListFragment"
+        android:label="@string/title_ShopList"
+        tools:layout="@layout/fragment_shoplist" />
+
+    <fragment
+        android:id="@+id/navigation_qr"
+        android:name="com.example.hyperledgervirtualmoneyproject.ui.Qr.QrFragment"
+        android:label="@string/title_Qr"
+        tools:layout="@layout/fragment_qr" />
+
+    <fragment
+        android:id="@+id/navigation_userinfo"
+        android:name="com.example.hyperledgervirtualmoneyproject.ui.user.UserFragment"
+        android:label="@string/title_User"
+        tools:layout="@layout/fragment_user" />
+
+</navigation>
