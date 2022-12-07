@@ -14,9 +14,12 @@
   - OOO
   
 ## System Design
-  - ### System Requirements
-    - OOO
-    - OOO
+![frontend](./img/frontend.png)
+![mobile](./img/mobile.png)
+![backend](./img/backend.png)
+![blockchain](./img/blockchain.png)
+![infra](./img/infra.png)
+![const](./img/const.png)
     
 ## Case Study
   - ### Description
