@@ -28,8 +28,8 @@
   - ### OOO
   
 ## Project Outcome
-- ### 2022년 추계종합학술발표회 
-- ### 공개 SW개발자 대회
+- ### 2022년 추계종합학술발표회 참가
+- ### 2022년 공개 SW개발자 대회 참가
 
 ## Poster
 ![컴퓨터_11](https://user-images.githubusercontent.com/94531328/206099229-5ab3ec19-81e8-405d-a561-b742616cdefe.jpg)
